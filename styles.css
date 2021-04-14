@@ -196,9 +196,11 @@ ul li {
 @media screen and (max-width: 360px) {
 	.logo {
 		max-width: 300px;
+		width: inherit;
 	}
 	img {
 		max-width: 300px;
+		width: inherit;
 	}
 }
 

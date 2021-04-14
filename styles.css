@@ -3,6 +3,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -11,10 +12,19 @@ body {
 	color: white;
 	width: 100%;
 	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	overflow-x: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 }
 .text {
@@ -26,9 +36,18 @@ body {
 .logo {
 	width: 350px;
 	height: 350px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	position: relative;
 	overflow-x: hidden;
@@ -40,6 +59,8 @@ body {
 	height: 3px;
 	position: absolute;
 	top: 14px;
+	-webkit-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
 	transform: rotate(-20deg);
 }
 .logo span:nth-child(2) {
@@ -48,6 +69,10 @@ body {
 	height: 3px;
 	position: absolute;
 	top: 110px;
+
+	-webkit-transform: rotate(-20deg);
+
+	-ms-transform: rotate(-20deg);
 
 	transform: rotate(-20deg);
 }
@@ -58,6 +83,8 @@ body {
 	position: absolute;
 	top: 80px;
 	left: -30px;
+	-webkit-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
 	transform: rotate(-20deg);
 }
 .logo span:nth-child(4) {
@@ -67,6 +94,8 @@ body {
 	position: absolute;
 	top: 146px;
 	left: -30px;
+	-webkit-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
 	transform: rotate(-20deg);
 }
 .logo span:nth-child(5) {
@@ -76,6 +105,8 @@ body {
 	position: absolute;
 	top: 172px;
 	right: -30px;
+	-webkit-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
 	transform: rotate(-20deg);
 }
 .logo span:nth-child(6) {
@@ -85,6 +116,8 @@ body {
 	position: absolute;
 	top: 144px;
 	right: -30px;
+	-webkit-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
 	transform: rotate(-20deg);
 }
 .logo-back {
@@ -95,12 +128,20 @@ body {
 img {
 	height: 300px;
 	width: 100%;
+	-o-object-fit: contain;
 	object-fit: contain;
 }
 .stripes {
 	/* 	background-color: #333;
  */
 	border-radius: 50%;
+	background: -o-linear-gradient(
+		45deg,
+		rgba(105, 105, 105, 0.918),
+		grey,
+		rgb(66, 66, 66),
+		rgba(36, 36, 36, 0.911)
+	);
 	background: linear-gradient(
 		45deg,
 		rgba(105, 105, 105, 0.918),
@@ -116,7 +157,11 @@ img {
 }
 
 .nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	position: absolute;
 	bottom: 0;
@@ -125,9 +170,14 @@ img {
 }
 .nav ul {
 	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	font-family: sans-serif;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	width: 100%;
 	font-weight: bold;
@@ -153,6 +203,16 @@ ul li {
 }
 
 .arrow div span:nth-child(1) {
+	background: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		from(red),
+		color-stop(white),
+		color-stop(white),
+		to(red)
+	);
+	background: -o-linear-gradient(bottom, red, white, white, red);
 	background: linear-gradient(to top, red, white, white, red);
 	width: 1px;
 	height: 100%;
@@ -168,6 +228,8 @@ ul li {
 	position: absolute;
 	top: 40%;
 	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
 .arrow span:nth-child(3) {
@@ -179,6 +241,8 @@ ul li {
 	position: absolute;
 	top: 20%;
 	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
 
